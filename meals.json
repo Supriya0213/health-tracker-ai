@@ -1,0 +1,22 @@
+[
+  {
+    "date": "2026-05-25",
+    "meal": "2 roti and paneer curry",
+    "calories": 450,
+    "protein": 22
+  },
+
+  {
+    "date": "2026-05-25",
+    "meal": "banana shake",
+    "calories": 280,
+    "protein": 8
+  },
+
+  {
+    "date": "2026-05-26",
+    "meal": "oats with milk",
+    "calories": 320,
+    "protein": 14
+  }
+]

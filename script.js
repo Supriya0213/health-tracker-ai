@@ -1,3 +1,13 @@
+let meals = [];
+
+fetch("meals.json")
+    .then(response => response.json())
+    .then(data => {
+
+        meals = data;
+
+        console.log(meals);
+    });
 const foodDatabase = {
 
     roti: {
@@ -142,6 +152,23 @@ function trackMeal() {
 
     totalProtein += protein;
 
+    const mealData = {
+
+    meal: input,
+
+    calories: calories,
+
+    protein: protein,
+
+    date:
+    new Date().toLocaleDateString()
+};
+
+
+meals.push(mealData);
+
+console.log(meals);
+
 
     calorieHistory.push(calories);
 
@@ -149,7 +176,14 @@ function trackMeal() {
     localStorage.setItem(
         "totalCalories",
         totalCalories
+
     );
+   
+
+
+meals.push(mealData);
+
+console.log(meals);
 
 
     localStorage.setItem(
