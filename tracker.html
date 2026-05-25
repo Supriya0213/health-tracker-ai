@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Meal Tracker</title>
+
+  <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+  <a href="index.html">Home</a>
+
+  <a href="bmi.html">BMI</a>
+
+  <a href="tracker.html">Tracker</a>
+
+  <a href="insights.html">Insights</a>
+
+</div>
+
+<div class="container">
+
+  <h1>AI Meal Tracker</h1>
+
+  <div class="card">
+
+    <input type="text"
+           id="mealInput"
+           placeholder="Example: 2 roti and paneer">
+
+    <button onclick="trackMeal()">
+      Analyze Meal
+    </button>
+
+  </div>
+
+  <div class="stats">
+
+    <div class="stat-box">
+      <h3>Total Calories</h3>
+      <p id="totalCalories">0</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>Total Protein</h3>
+      <p id="totalProtein">0 g</p>
+    </div>
+
+  </div>
+
+  <div class="card">
+
+    <h2>Meal Analysis</h2>
+
+    <div id="mealResult"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

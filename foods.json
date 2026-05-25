@@ -1,0 +1,21 @@
+{
+  "roti": {
+    "calories": 120,
+    "protein": 3
+  },
+
+  "rice": {
+    "calories": 130,
+    "protein": 2.5
+  },
+
+  "paneer": {
+    "calories": 265,
+    "protein": 18
+  },
+
+  "egg": {
+    "calories": 78,
+    "protein": 6
+  }
+}

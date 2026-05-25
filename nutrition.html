@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Nutrition Planner</title>
+
+  <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+  <a href="index.html">Home</a>
+
+  <a href="bmi.html">BMI</a>
+
+  <a href="tracker.html">Tracker</a>
+
+  <a href="insights.html">Insights</a>
+
+  <a href="nutrition.html">Nutrition</a>
+
+</div>
+
+<div class="container">
+
+  <h1>Nutrition Planner AI</h1>
+
+  <div class="card">
+
+    <input type="number"
+           id="age"
+           placeholder="Age">
+
+    <input type="number"
+           id="height"
+           placeholder="Height (cm)">
+
+    <input type="number"
+           id="weight"
+           placeholder="Weight (kg)">
+
+    <select id="gender">
+
+      <option value="female">
+        Female
+      </option>
+
+      <option value="male">
+        Male
+      </option>
+
+    </select>
+
+    <select id="activity">
+
+      <option value="1.2">
+        Sedentary
+      </option>
+
+      <option value="1.375">
+        Light Exercise
+      </option>
+
+      <option value="1.55">
+        Moderate Exercise
+      </option>
+
+      <option value="1.725">
+        Heavy Exercise
+      </option>
+
+    </select>
+
+    <button onclick="calculateNutrition()">
+      Generate Nutrition Plan
+    </button>
+
+  </div>
+
+  <div class="stats">
+
+    <div class="stat-box">
+      <h3>Maintenance Calories</h3>
+      <p id="maintenance">0 kcal</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>Fat Loss Calories</h3>
+      <p id="fatLoss">0 kcal</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>Protein Needed</h3>
+      <p id="proteinNeed">0 g</p>
+    </div>
+
+  </div>
+
+  <div class="stats">
+
+    <div class="stat-box">
+      <h3>Carbs Needed</h3>
+      <p id="carbsNeed">0 g</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>Fats Needed</h3>
+      <p id="fatsNeed">0 g</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>Water Intake</h3>
+      <p id="waterNeed">0 L</p>
+    </div>
+
+  </div>
+
+  <div class="card">
+
+    <h2>AI Nutrition Insights</h2>
+
+    <div id="nutritionInsights"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
